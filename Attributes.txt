@@ -1,0 +1,136 @@
+Attributes
+===========
+
+What : in a built in class
+
+Why : to give additional info at runtime
+
+Where to use : Attribute is used before class, variable, method and anywhere, to add additional info
+
+[Serializable]
+public class Book
+
+Built-in 
+
+User defined
+
+
+
+Beep Function
+---------------
+
+Its a built in function of the Windows Operating System
+
+We have to import [DllImport("kernel32.dll")]
+
+dll extension is the reusable code
+
+
+Create your own attribute
+==========================
+
+[Attribute Usage, MultipleUsage = true]
+Create a Class DebugInfo : Attribute   ---------- Inherit from attribute class
+
+
+It can be applied to Class, Constructor, Field(Like Variables), Method, Property
+
+AllowMultiple usage = true
+
+-------------------------------------------------------------------------------------------------------------
+
+                                                     OBSELETE 
+                                                 ----------------
+
+When we will use obselete, it will not run, since the version may be obselete.
+
+
+internal class Class2
+{
+   [Obsolete]
+   public void Function1()
+   {
+       Console.WriteLine("Function1");
+   }
+ 
+   public void Function2()
+   {
+       Console.WriteLine("Function2");
+   }
+}
+
+Class2 obj = new Class2();
+obj.Function1();
+obj.Function2();
+
+
+==============================================================================================================
+
+                                            
+                                                 Reflection
+                                               _______________
+
+
+Complete info about a program.
+
+Its a built-in function of C#.
+
+type is the reflection of a class.
+
+
+
+Q)** Steps to create a Custom Attribute
+
+
+1) Attribute Usage
+
+2) Allow Multiple usage
+
+3) Inherit Attribute Class
+
+
+Q)** How to use an attribute in only class and Constructor?
+
+A) Attribute target class
+   Attribute target Constructor
+
+
+Structures
+============
+
+A structure is used to a value type variable (variable of value types)
+A variable which can hold many values of different datatypes
+
+struct OrderDetails
+{
+	int orderid;
+	string productname;
+	float price;
+	}
+
+- structure can be created inside class or outside class
+- structure can have variables, functions, events
+- It can hold value of different types
+
+In structure everything is public by default
+
+
+** Diff b/w structure and class
+
+Ans) In Copy
+
+______________________________________________________________________________
+
+                                           Enum
+                                        ----------
+
+
+A fixed set of constant values
+
+A programmer can pick a particular value.
+
+Enum can be created anywhere.
+
+It can be used outside the class, then other classes can also access it.
+
+If used inside the class, then only that class can use it.
